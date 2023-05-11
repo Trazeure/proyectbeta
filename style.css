@@ -1,0 +1,24 @@
+
+body {
+background: rgb(63,94,251);
+background: radial-gradient(circle, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);;
+font-family: Arial, sans-serif;
+}
+
+h1 {
+text-align: center;
+}
+
+form {
+text-align: center;
+}
+
+.error {
+color: rgb(219, 18, 18);
+}
+
+.container {
+background-color: #9292b4;
+padding: 20px;
+margin: 20px;
+}

@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Predicción de estadística deportivas</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="C:\Users\Desti\OneDrive\Escritorio\proyecto_\static\title.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            font-size: 16px;
+            font-weight: 300;
+            text-align: center;
+            background-color: #FBAB7E;
+            background-image: linear-gradient(62deg, #FBAB7E 0%, #F7CE68 100%);
+
+        }
+
+        .container {
+            background:radial-gradient( circle farthest-corner at 10% 20%,  rgba(90,92,106,1) 0%, rgba(32,45,58,1) 81.3% );
+            padding: 20px;
+            border-radius: 10px;
+            margin: 50px auto;
+            max-width: 600px;
+        }
+
+        .title-animation {
+            font-size: 20px;
+            color: #B95;
+            text-shadow: 0 0 8px rgba(lighten(50%), 0.3);
+            font-family: Courier, monospace;
+            margin: 0.8em 0;
+            font-size: 18px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            white-space: nowrap;
+            letter-spacing: 8px;
+        }
+        .sport-option {
+            display: inline-block;
+            margin: 10px;
+            padding: 10px;
+            border: 1px solid #fffdfd;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+
+        .sport-option:hover {
+            background-color: #fdfbfb;
+            transform: scale(1.1);
+        }
+
+        .sport-option i {
+            font-size: 48px;
+            margin-bottom: 10px;
+            color: #ffffff;
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        .animate__animated {
+            animation-duration: 1s;
+            animation-fill-mode: both;
+        }
+
+        .animate__bounceIn {
+            animation-name: bounceIn;
+        }
+
+        .animate__fadeIn {
+            animation-name: fadeIn;
+        }
+
+        #sport-animation {
+            margin-top: 20px;
+            width: 200px;
+            height: 200px;
+            background-image: url('animaciones\baseball.gif');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        @keyframes spin {
+          0% { transform: rotate(0deg); }
+          100% { transform: rotate(360deg); }
+        }
+
+        #loading {
+          display: none;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          width: 50px;
+          height: 50px;
+          border:5px solid #ffffff;
+          border-top-color: #1e7b7b;
+          border-radius: 50%;
+          animation: spin 3s ease-in-out infinite;
+        }
+    </style>
+    <script>
+        function selectSport(sport) {
+            var sportInput = document.getElementById("sport");
+            sportInput.value = sport;
+
+            updateStatisticOptions();
+
+            var sportAnimation = document.getElementById("sport-animation");
+            if (sport === "baseball") {
+       
+            } else if (sport === "nfl") {
+      
+            } else if (sport === "ftmx") {
+      
+            }
+        }
+
+        function updateStatisticOptions() {
+            var sport = document.getElementById("sport").value;
+            var statisticSelect = document.getElementById("statistic");
+            statisticSelect.innerHTML = "";
+
+            var defaultOption = document.createElement("option");
+            defaultOption.text = "--Selecciona una estadística--";
+            defaultOption.value = "";
+            statisticSelect.add(defaultOption);
+
+            if (sport === "baseball") {
+                var options = ["AVG", "HR", "RBI"];
+                var labels = ["Promedio de bateo", "Home runs", "Carreras impulsadas"];
+            } else if (sport === "nfl") {
+                var options = ["Passing Yds", "TD"];
+                var labels = ["Yardas de pase", "Touchdowns"];
+            } else if (sport === "ftmx") {
+                var options = ["W Win", "L Loss", "D Draw"];
+                var labels = ["Victorias", "Derrotas", "Empates"];
+            } else {
+                return;
+            }
+
+            for (var i = 0; i < options.length; i++) {
+                var option = document.createElement("option");
+                option.text = labels[i];
+                option.value = options[i];
+                statisticSelect.add(option);
+            }
+        }
+    </script>
+    <script>
+        
+  
+    // Función para realizar el efecto de "Text Scramble" de manera recursiva
+    function scrambleText(element, text) {
+        let originalText = element.textContent;
+        let index = 0;
+        const interval = setInterval(() => {
+            element.textContent = originalText.slice(0, index) + randomCharacters(originalText.length - index);
+            index++;
+            if (index > originalText.length) {
+                clearInterval(interval);
+                setTimeout(() => {
+                    scrambleText(element, originalText); // Llama a la función de nuevo después de un breve retraso
+                }, 2000); // 2000 ms (2 segundos) de retraso antes de iniciar la animación nuevamente
+            }
+        }, 100);
+    }
+
+        // Función para generar caracteres aleatorios
+        function randomCharacters(length) {
+            let result = '';
+            const characters = '!<>-_\\/[]{}—=+*^?#________';
+            const charactersLength = characters.length;
+            for (let i = 0; i < length; i++) {
+                result += characters.charAt(Math.floor(Math.random() * charactersLength));
+            }
+            return result;
+        }
+
+        // Llamada a la función de efecto de "Text Scramble" al cargar la página
+        window.addEventListener('DOMContentLoaded', () => {
+            const titleElement = document.querySelector('.title-animation');
+            const originalText = titleElement.textContent;
+            scrambleText(titleElement, originalText);
+        });
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="title-animation">Predicción de estadísticas</h1>
+        <form action="/" method="post" onsubmit="showLoading()">
+            <h2>Selecciona un deporte:</h2>
+            <div class="sport-option animate__animated animate__bounceIn" onclick="selectSport('baseball')">
+                <i class="fas fa-baseball-ball"></i>
+                <p>Béisbol</p>
+            </div>
+            <div class="sport-option animate__animated animate__bounceIn" onclick="selectSport('nfl')">
+                <i class="fas fa-football-ball"></i>
+                <p>NFL</p>
+            </div>
+            <div class="sport-option animate__animated animate__bounceIn" onclick="selectSport('ftmx')">
+                <i class="fas fa-futbol"></i>
+                <p>Futbol</p>
+            </div>
+            <input type="hidden" name="sport" id="sport" value="">
+            <br><br>
+            <label for="statistic">Selecciona una estadística para predecir:</label>
+            <select name="statistic" id="statistic">
+                <option value="">--Selecciona una estadística--</option>
+            </select>
+            <br><br>
+            <input type="submit" value="Predecir">
+        </form>
+        <div id="sport-animation"></div>
+        <div id="loading"></div>
+    </div>
+</body>
+</html>

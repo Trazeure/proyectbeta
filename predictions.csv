@@ -1,0 +1,19 @@
+,Column1,2,Team,MP Matches Played this season,W Win,D Draw,L Loss,GF Goals For (GF). The number of goals this team have scored.,GA Goals Against (GA). The number of goals this team have conceded.,GD Goal Difference (GD). Goals Scored - Goals Conceded,Pts,Last 5,PPG,CS Clean Sheets (CS). Table of teams with the highest number of matches where they conceded 0 goals. Stats are taken from League runs only. * Team must have played a minimum of 7 matches before they qualify for this CS table.,BTTS Both Teams To Score (BTTS). List of teams with the highest number of matches where both teams scored. Stats from team's Domestic League runs only. * Team must have played a minimum of 7 matches before they qualify for this BTTS table.,xGF Expected Goals For,Yellow Card / Red Card,Corners / match,"1.5+ Over 1.5 (1.5+). The number or percent of matches where the total goals ended above 1.5 (ie: 2, 3, or 4 goals)","2.5+ Over 2.5 (2.5+). The number or percent of matches where the total goals ended above 2.5 (ie: 3, 4, or 5 goals)",AVG Average Goals Per Match (AVG). The average number of total goals per match. Calculated across this season.,W Win_pred,L Loss_pred,D Draw_pred
+0,1,,CF Monterrey,17,13,1,3,35,14,21,40,[List],2.35,0.45,0.47,1.92,,,0.71,0.53,2.68,13.113541608027926,2.8864583919720754,1.0
+1,2,,Club América,17,9,7,1,36,21,15,34,[List],2.0,0.29,0.66,2.1,,,0.87,0.76,3.42,8.602966149203422,1.3970338507965776,7.000000000000001
+2,3,,CD Guadalajara,17,10,4,3,28,18,10,34,[List],2.0,0.34,0.6,1.79,,,0.69,0.49,2.4,8.946548284318258,4.053451715681742,4.0
+3,4,,Deportivo Toluca FC,17,9,5,3,34,19,15,32,[List],1.88,0.2,0.73,1.69,,,0.83,0.66,3.2,9.629771506133556,2.3702284938664437,5.0
+4,5,,CF Pachuca,17,10,1,6,32,24,8,31,[List],1.82,0.3,0.58,1.87,,,0.8,0.58,3.03,10.060231190322343,5.939768809677657,0.9999999999999996
+5,6,,Club León,17,8,6,3,23,13,10,30,[List],1.76,0.34,0.49,1.61,,,0.66,0.51,2.6,7.879201081271765,3.120798918728233,6.000000000000002
+6,7,,Tigres UANL,17,7,4,6,20,17,3,25,[List],1.47,0.49,0.38,1.86,,,0.59,0.41,2.19,7.265480331623409,5.73451966837659,4.0
+7,8,,Cruz Azul FC,17,7,3,7,21,22,-1,24,[List],1.41,0.3,0.57,1.3,,,0.7,0.62,2.89,6.856332443678204,7.143667556321795,3.0000000000000004
+8,9,,CSyD Atlas de Guadalajara,17,4,9,4,27,22,5,21,[List],1.24,0.18,0.56,1.47,,,0.68,0.47,2.71,5.17711729941022,2.822882700589777,9.0
+9,10,,Querétaro FC,17,4,8,5,16,21,-5,20,[List],1.18,0.18,0.59,1.29,,,0.82,0.44,2.65,3.2972681773145567,5.702731822685441,8.0
+10,11,,Puebla FC,17,6,2,9,26,32,-6,20,[List],1.18,0.14,0.7,1.46,,,0.84,0.57,3.27,6.23681783718861,8.76318216281139,1.9999999999999991
+11,12,,Atlético San Luis,17,5,4,8,16,21,-5,19,[List],1.12,0.32,0.47,1.04,,,0.68,0.41,2.21,5.374045660384171,7.625954339615827,4.0
+12,13,,Club Santos Laguna,17,5,4,8,23,37,-14,19,[List],1.12,0.19,0.61,1.73,,,0.92,0.69,3.58,3.312786116716902,9.687213883283096,3.9999999999999996
+13,14,,Club Universidad Nacional,17,5,3,9,24,32,-8,18,[List],1.06,0.12,0.74,1.62,,,0.82,0.65,3.18,5.238973106309061,8.76102689369094,2.9999999999999996
+14,15,,Tijuana,17,3,7,7,19,29,-10,16,[List],0.94,0.21,0.59,1.49,,,0.85,0.5,2.82,2.666170186220289,7.333829813779708,7.000000000000001
+15,16,,FC Juárez,17,3,6,8,17,25,-8,15,[List],0.88,0.17,0.51,1.25,,,0.71,0.4,2.29,3.640848147890491,7.359151852109506,6.000000000000001
+16,17,,Club Necaxa,17,3,5,9,16,24,-8,14,[List],0.82,0.17,0.6,1.26,,,0.71,0.51,2.49,4.154250826355559,7.845749173644439,5.0
+17,18,,Mazatlán FC,17,2,1,14,19,41,-22,7,[List],0.41,0.09,0.71,1.02,,,0.88,0.59,2.97,2.9789345577798763,13.021065442220124,0.9999999999999984
